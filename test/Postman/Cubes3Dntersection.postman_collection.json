@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "b49283f2-425e-493e-8665-8ee8eccb34d2",
+		"name": "Cubes3Dntersection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST Cubes 3D Intersection - Cubes3DShouldTouch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"FirstCube3D\": {\r\n    \"pointCoordinates\": {\r\n      \"x0\": 2,\r\n      \"y0\": 2,\r\n      \"z0\": 2\r\n    }\r\n  },\r\n  \"SecondCube3D\": {\r\n    \"pointCoordinates\": {\r\n      \"x0\": 4,\r\n      \"y0\": 2,\r\n      \"z0\": 2\r\n    }\r\n  },\r\n  \"edgesLength\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44340/api/Cubes3DIntersection/post",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44340",
+					"path": [
+						"api",
+						"Cubes3DIntersection",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Cubes 3D Intersection - Cubes3DShouldOverlap",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"FirstCube3D\": {\r\n    \"pointCoordinates\": {\r\n      \"x0\": 2,\r\n      \"y0\": 2,\r\n      \"z0\": 2\r\n    }\r\n  },\r\n  \"SecondCube3D\": {\r\n    \"pointCoordinates\": {\r\n      \"x0\": 3,\r\n      \"y0\": 2,\r\n      \"z0\": 2\r\n    }\r\n  },\r\n  \"edgesLength\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44340/api/Cubes3DIntersection/post",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44340",
+					"path": [
+						"api",
+						"Cubes3DIntersection",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Cubes 3D Intersection - Cubes3DShouldNotTouch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"FirstCube3D\": {\r\n    \"pointCoordinates\": {\r\n      \"x0\": 2,\r\n      \"y0\": 2,\r\n      \"z0\": 2\r\n    }\r\n  },\r\n  \"SecondCube3D\": {\r\n    \"pointCoordinates\": {\r\n      \"x0\": 10,\r\n      \"y0\": 10,\r\n      \"z0\": 10\r\n    }\r\n  },\r\n  \"edgesLength\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44340/api/Cubes3DIntersection/post",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44340",
+					"path": [
+						"api",
+						"Cubes3DIntersection",
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
