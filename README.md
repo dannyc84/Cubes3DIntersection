@@ -1,5 +1,5 @@
 # Cubes3DIntersection
-Cubes3DIntersection is a web application to check if two 3D cubes collide and, eventually, calculate the intersected volume. It is built following the requirements [to verify if it works here](./cubes.pdf).
+Cubes3DIntersection is a web application to check if two 3D cubes collide and, eventually, calculate the intersected volume. It is built following the requirements [here](./cubes.pdf).
 
 ## Getting Started
 Use these instructions to get the project up and running.
