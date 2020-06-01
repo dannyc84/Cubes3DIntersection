@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\Cubes3DIntersection.Api\Cubes3DIntersection.Api.csproj" />
+    <ProjectReference Include="..\..\..\src\Cubes3DIntersection.Api\Cubes3DIntersection.Api.csproj" />
   </ItemGroup>
 
 </Project>
