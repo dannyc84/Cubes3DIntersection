@@ -7,6 +7,35 @@
 	"item": [
 		{
 			"name": "POST Cubes 3D Intersection - Cubes3DShouldTouch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a7893086-c287-4e88-bf0e-87fcb5199948",
+						"exec": [
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"Content-Type\");\r",
+							"\r",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;\r",
+							"\r",
+							"if (contentTypeHeaderExists) {\r",
+							"    tests[\"Content-Type is application/json\"] = \r",
+							"      responseHeaders[\"Content-Type\"].has(\"application/json\");\r",
+							"}\r",
+							"\r",
+							"const body = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Expects the Collision to be true\", function() {\r",
+							"    pm.expect(body).to.have.property(\"Collision\", true);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Expects the IntersectionVolume to be zero\", function() {\r",
+							"    pm.expect(body).to.have.property(\"IntersectionVolume\", 0);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -37,6 +66,35 @@
 		},
 		{
 			"name": "POST Cubes 3D Intersection - Cubes3DShouldOverlap",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7303f186-7233-45a5-b55e-b1b1e189a517",
+						"exec": [
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"Content-Type\");\r",
+							"\r",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;\r",
+							"\r",
+							"if (contentTypeHeaderExists) {\r",
+							"    tests[\"Content-Type is application/json\"] = \r",
+							"      responseHeaders[\"Content-Type\"].has(\"application/json\");\r",
+							"}\r",
+							"\r",
+							"const body = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Expects the Collision to be true\", function() {\r",
+							"    pm.expect(body).to.have.property(\"Collision\", true);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Expects the IntersectionVolume to be zero\", function() {\r",
+							"    pm.expect(body).to.have.property(\"IntersectionVolume\", 4);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -67,6 +125,35 @@
 		},
 		{
 			"name": "POST Cubes 3D Intersection - Cubes3DShouldNotTouch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "54008a37-f61c-47a2-9820-ce9e551c74dd",
+						"exec": [
+							"var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"Content-Type\");\r",
+							"\r",
+							"tests[\"Has Content-Type\"] = contentTypeHeaderExists;\r",
+							"\r",
+							"if (contentTypeHeaderExists) {\r",
+							"    tests[\"Content-Type is application/json\"] = \r",
+							"      responseHeaders[\"Content-Type\"].has(\"application/json\");\r",
+							"}\r",
+							"\r",
+							"const body = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Expects the Collision to be true\", function() {\r",
+							"    pm.expect(body).to.have.property(\"Collision\", false);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Expects the IntersectionVolume to be zero\", function() {\r",
+							"    pm.expect(body).to.have.property(\"IntersectionVolume\", 0);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [],
