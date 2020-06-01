@@ -21,7 +21,6 @@ namespace Cubes3DIntersection.Api.Tests.Controllers
         {
             _mockCube3DIntersectionService =  new Mock<ICube3DIntersectionService>();
             _mockAppLogger = new Mock<IAppLogger<Cubes3DIntersectionApiController>>();
-            Client = factory.CreateClient();
         }
 
         [Fact]

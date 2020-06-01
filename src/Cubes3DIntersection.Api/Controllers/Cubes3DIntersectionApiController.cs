@@ -17,15 +17,12 @@ namespace Cubes3DIntersection.Api.Controllers
     {
 
         private readonly ICube3DIntersectionService _cube3DIntersectionService;
-        //private readonly IMapper _mapper;
         private readonly IAppLogger<Cubes3DIntersectionApiController> _logger;
 
         public Cubes3DIntersectionApiController(ICube3DIntersectionService cube3DIntersectionService,
-            //IMapper mapper,
             IAppLogger<Cubes3DIntersectionApiController> logger)
         {
             _cube3DIntersectionService = cube3DIntersectionService ?? throw new ArgumentNullException(nameof(cube3DIntersectionService));
-            //_mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 

@@ -27,8 +27,4 @@
     <ProjectReference Include="..\Cubes3DIntersection.Core\Cubes3DIntersection.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="Cubes3DIntersection.Api.csproj.user" />
-  </ItemGroup>
-
 </Project>
