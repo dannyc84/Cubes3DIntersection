@@ -28,7 +28,7 @@ dotnet run
 ```
 5. Launch http://localhost:44340/ in your browser to view the Swagger UI documentation.
 
-If you have **Visual Studio** after cloning Open solution with your IDE, Cubes3DIntersection.Api should be the start-up project. Directly run this project on Visual Studio with **F5 or Ctrl+F5**. You will see index page of project, you can navigate product and category pages and you can perform crud operations on your browser.
+If you have **Visual Studio** after cloning, click on Open solution with your IDE and Cubes3DIntersection.Api should be the start-up project. Directly run this project on Visual Studio with **F5 or Ctrl+F5**. You will see index page of project, you can navigate product and category pages and you can perform crud operations on your browser.
 
 ### Usage
 The project uses a persistent database, even if the default configuration of Entity Framework Database is **"InMemoryDatabase"**.
