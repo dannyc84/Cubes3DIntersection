@@ -1,6 +1,4 @@
-﻿using Cubes3DIntersection.Application.Factories;
-using Cubes3DIntersection.Application.Models.Base;
-using System;
+﻿using Cubes3DIntersection.Application.Models.Base;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;

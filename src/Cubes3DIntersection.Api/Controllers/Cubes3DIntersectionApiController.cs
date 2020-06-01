@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AutoMapper;
 using Cubes3DIntersection.Application.Interfaces;
 using Cubes3DIntersection.Application.Models;
 using Cubes3DIntersection.Core.Repository;
@@ -18,15 +17,15 @@ namespace Cubes3DIntersection.Api.Controllers
     {
 
         private readonly ICube3DIntersectionService _cube3DIntersectionService;
-        private readonly IMapper _mapper;
+        //private readonly IMapper _mapper;
         private readonly IAppLogger<Cubes3DIntersectionApiController> _logger;
 
         public Cubes3DIntersectionApiController(ICube3DIntersectionService cube3DIntersectionService,
-            IMapper mapper,
+            //IMapper mapper,
             IAppLogger<Cubes3DIntersectionApiController> logger)
         {
             _cube3DIntersectionService = cube3DIntersectionService ?? throw new ArgumentNullException(nameof(cube3DIntersectionService));
-            _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
+            //_mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
@@ -47,7 +46,7 @@ namespace Cubes3DIntersection.Api.Controllers
             {
                 var cubes3DDto = await _cube3DIntersectionService.Create(cube3DIntersectionModel);
                 _logger.LogInformation($"Cubes 3D Intersection successfully generated.");
-                return Ok(cubes3DDto);
+                return CreatedAtAction(nameof(PostCubes3DIntersection), new { id = cubes3DDto.Id }, cubes3DDto);
             }
 
             catch (Exception ex)

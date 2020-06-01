@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="3.1.4" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
     <PackageReference Include="Moq" Version="4.14.1" />
     <PackageReference Include="xunit" Version="2.4.0" />
@@ -16,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\src\Cubes3DIntersection.Api\Cubes3DIntersection.Api.csproj" />
+    <ProjectReference Include="..\..\..\src\Cubes3DIntersection.Application\Cubes3DIntersection.Application.csproj" />
   </ItemGroup>
 
 </Project>

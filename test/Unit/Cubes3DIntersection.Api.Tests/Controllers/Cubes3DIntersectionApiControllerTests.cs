@@ -1,41 +1,27 @@
-using AutoMapper;
 using Cubes3DIntersection.Api.Controllers;
+using Cubes3DIntersection.Application;
 using Cubes3DIntersection.Application.Factories;
 using Cubes3DIntersection.Application.Interfaces;
 using Cubes3DIntersection.Application.Models;
 using Cubes3DIntersection.Core.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using System;
 using System.Net;
 using System.Threading.Tasks;
 using Xunit;
 
 namespace Cubes3DIntersection.Api.Tests.Controllers
 {
-    public class Cubes3DIntersectionApiControllerTests
+    public class Cubes3DIntersectionApiControllerTests : IClassFixture<CustomWebApplicationFactory<Startup>>
     {
-        private MockRepository _mockRepository;
+        private readonly Mock<ICube3DIntersectionService> _mockCube3DIntersectionService;
+        private readonly Mock<IAppLogger<Cubes3DIntersectionApiController>> _mockAppLogger;
 
-        private Mock<ICube3DIntersectionService> _mockCube3DIntersectionService;
-        private Mock<IMapper> _mockMapper;
-        private Mock<IAppLogger<Cubes3DIntersectionApiController>> _mockAppLogger;
-
-        public Cubes3DIntersectionApiControllerTests()
+        public Cubes3DIntersectionApiControllerTests(CustomWebApplicationFactory<Startup> factory)
         {
-            _mockRepository = new MockRepository(MockBehavior.Default);
-
-            _mockCube3DIntersectionService = _mockRepository.Create<ICube3DIntersectionService>();
-            _mockMapper = _mockRepository.Create<IMapper>();
-            _mockAppLogger = _mockRepository.Create<IAppLogger<Cubes3DIntersectionApiController>>();
-        }
-
-        private Cubes3DIntersectionApiController CreateCubes3DIntersectionApiController()
-        {
-            return new Cubes3DIntersectionApiController(
-                _mockCube3DIntersectionService.Object,
-                _mockMapper.Object,
-                _mockAppLogger.Object);
+            _mockCube3DIntersectionService =  new Mock<ICube3DIntersectionService>();
+            _mockAppLogger = new Mock<IAppLogger<Cubes3DIntersectionApiController>>();
+            Client = factory.CreateClient();
         }
 
         [Fact]
@@ -43,29 +29,62 @@ namespace Cubes3DIntersection.Api.Tests.Controllers
         {
             // Arrange
             var cubes3DIntersectionApiController = CreateCubes3DIntersectionApiController();
-            var cube3DIntersectionModel = new Cube3DIntersectionModel
-            {
-                FirstCube3D = new Cube3DModel
+
+            var  firstCube3D = new Cube3DModel
                 {
                     PointCoordinates = PointModelFactory.Create(2, 2, 2)
-                },
-                SecondCube3D = new Cube3DModel
+                };
+
+            var secondCube3D = new Cube3DModel
                 {
                     PointCoordinates = PointModelFactory.Create(4, 2, 2)
-                },
-                EdgesLength = 2
+                };
+
+            var edgesLength = 2;
+
+            var cube3DIntersectionRequest = new Cube3DIntersectionModel
+            {
+                FirstCube3D = firstCube3D,
+                SecondCube3D = secondCube3D,
+                EdgesLength = edgesLength
             };
 
-            // Act
-            var response = await cubes3DIntersectionApiController.PostCubes3DIntersection(
-                cube3DIntersectionModel);
-            var okResult = response.Result as OkObjectResult;
+            var cube3DIntersectionExpectedResponse = new Cube3DIntersectionModel
+            {
+                FirstCube3D = firstCube3D,
+                SecondCube3D = secondCube3D,
+                EdgesLength = edgesLength,
+                Collision = true,
+                IntersectionVolume = 0
+            };
 
-            // Assert
-            Assert.NotNull(okResult);
-            Assert.True(okResult is OkObjectResult);
-            Assert.True((int)HttpStatusCode.OK == okResult.StatusCode);
-            _mockRepository.VerifyAll();
+            _mockCube3DIntersectionService
+                .Setup(ci => ci.Create(cube3DIntersectionRequest))
+                .ReturnsAsync(cube3DIntersectionExpectedResponse);
+
+            // Act
+            var createdResponse = await cubes3DIntersectionApiController.PostCubes3DIntersection(
+                cube3DIntersectionRequest);
+
+            Assert.NotNull(createdResponse);
+
+            var result = createdResponse.Result as ObjectResult;
+            Assert.Equal(result.StatusCode, (int)HttpStatusCode.Created);
+
+            var actualResult = result.Value as Cube3DIntersectionModel;
+            Assert.IsType<Cube3DIntersectionModel>(actualResult);
+
+            Assert.True(actualResult.Collision == cube3DIntersectionExpectedResponse.Collision);
+            Assert.True(actualResult.IntersectionVolume == cube3DIntersectionExpectedResponse.IntersectionVolume);
+
+            _mockCube3DIntersectionService.VerifyAll();
+        }
+
+        private Cubes3DIntersectionApiController CreateCubes3DIntersectionApiController()
+        {
+            return new Cubes3DIntersectionApiController(
+                _mockCube3DIntersectionService.Object,
+                _mockAppLogger.Object);
         }
     }
 }
