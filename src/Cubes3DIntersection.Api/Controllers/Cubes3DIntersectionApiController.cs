@@ -1,12 +1,12 @@
 ﻿using Cubes3DIntersection.Application.Interfaces;
 using Cubes3DIntersection.Application.Models;
-using Cubes3DIntersection.Core.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Cubes3DIntersection.Core.Interfaces;
 
 namespace Cubes3DIntersection.Api.Controllers
 {

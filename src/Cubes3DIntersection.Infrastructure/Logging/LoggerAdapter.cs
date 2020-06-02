@@ -1,4 +1,4 @@
-﻿using Cubes3DIntersection.Core.Repository;
+﻿using Cubes3DIntersection.Core.Interfaces;
 using Microsoft.Extensions.Logging;
 
 namespace Cubes3DIntersection.Infrastructure.Logging

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Cubes3DIntersection.Application
+namespace Cubes3DIntersection.Api
 {
     public class Program
     {

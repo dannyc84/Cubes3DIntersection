@@ -1,8 +1,8 @@
-﻿using Cubes3DIntersection.Application.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using Cubes3DIntersection.Application.Models;
 
-namespace Cubes3DIntersection.Application.Services
+namespace Cubes3DIntersection.Application.Interfaces
 {
     public interface IEdgeService
     {

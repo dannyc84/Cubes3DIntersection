@@ -1,4 +1,5 @@
 ﻿using Cubes3DIntersection.Application.Models.Base;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
@@ -24,5 +25,10 @@ namespace Cubes3DIntersection.Application.Models
         public bool? Collision { get; set; }
 
         public double? IntersectionVolume { get; set; }
+
+        public object Add(double value1, double value2, double value3, double value4)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

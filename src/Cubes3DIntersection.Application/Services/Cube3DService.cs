@@ -1,14 +1,14 @@
-﻿using Cubes3DIntersection.Application.Interfaces;
-using Cubes3DIntersection.Application.Mappers;
-using Cubes3DIntersection.Application.Models;
-using Cubes3DIntersection.Application.Services;
-using Cubes3DIntersection.Core.Entities;
-using Cubes3DIntersection.Core.Repository;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Cubes3DIntersection.Application.Interfaces;
+using Cubes3DIntersection.Application.Mappers;
+using Cubes3DIntersection.Application.Models;
+using Cubes3DIntersection.Core.Entities;
+using Cubes3DIntersection.Core.Interfaces;
+using Cubes3DIntersection.Core.Repository;
 
-namespace Cubes3DIntersection.Application
+namespace Cubes3DIntersection.Application.Services
 {
     public class Cube3DService : ICube3DService
     {

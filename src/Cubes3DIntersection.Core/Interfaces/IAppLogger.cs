@@ -1,4 +1,4 @@
-﻿namespace Cubes3DIntersection.Core.Repository
+﻿namespace Cubes3DIntersection.Core.Interfaces
 {
     public interface IAppLogger<T>
     {

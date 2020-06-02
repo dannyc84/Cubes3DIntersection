@@ -1,6 +1,7 @@
 using AutoMapper;
 using Cubes3DIntersection.Application.Interfaces;
 using Cubes3DIntersection.Application.Services;
+using Cubes3DIntersection.Core.Interfaces;
 using Cubes3DIntersection.Core.Repository;
 using Cubes3DIntersection.Infrastructure.Data;
 using Cubes3DIntersection.Infrastructure.Logging;
@@ -13,7 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 
-namespace Cubes3DIntersection.Application
+namespace Cubes3DIntersection.Api
 {
     public class Startup
     {

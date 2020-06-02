@@ -8,6 +8,7 @@ using Cubes3DIntersection.Core.Repository;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Cubes3DIntersection.Core.Interfaces;
 
 namespace Cubes3DIntersection.Application.Services
 {

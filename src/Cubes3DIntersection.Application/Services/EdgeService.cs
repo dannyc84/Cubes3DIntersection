@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Cubes3DIntersection.Application.Interfaces;
+using Cubes3DIntersection.Core.Interfaces;
 
 namespace Cubes3DIntersection.Application.Services
 {
