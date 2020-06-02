@@ -23,6 +23,6 @@ namespace Cubes3DIntersection.Application.Models
 
         public bool? Collision { get; set; }
 
-        public double? IntersectionVolume { get; set;}
+        public double? IntersectionVolume { get; set; }
     }
 }

@@ -1,6 +1,6 @@
-﻿using System.Diagnostics;
+﻿using Cubes3DIntersection.Api.Views;
 using Microsoft.AspNetCore.Mvc;
-using Cubes3DIntersection.Api.Views;
+using System.Diagnostics;
 
 namespace Cubes3DIntersection.Api.Controllers
 {

@@ -22,8 +22,8 @@ namespace Cubes3DIntersection.Infrastructure.Data
         {
             base.OnModelCreating(modelBuilder);
 
-             modelBuilder.Entity<Cube3DIntersection>()
-               .HasKey(ci => new { ci.Id, ci.SecondCube3DId });
+            modelBuilder.Entity<Cube3DIntersection>()
+              .HasKey(ci => new { ci.Id, ci.SecondCube3DId });
 
             modelBuilder.Entity<Cube3DIntersection>()
                 .HasOne(ci => ci.FirstCube3D)

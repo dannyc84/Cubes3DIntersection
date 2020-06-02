@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Cubes3DIntersection.Application.Mappers;
+﻿using Cubes3DIntersection.Application.Mappers;
 using Cubes3DIntersection.Application.Models;
 using Cubes3DIntersection.Core.Entities;
 using Cubes3DIntersection.Core.Repository;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Cubes3DIntersection.Application.Services
 {
@@ -25,7 +25,7 @@ namespace Cubes3DIntersection.Application.Services
 
         public async Task<IEnumerable<EdgeModel>> GetCubes3DList()
         {
-            var edgesList =  await _edgeRepository.GetAll();
+            var edgesList = await _edgeRepository.GetAll();
             var mapped = ObjectMapper.Mapper.Map<IEnumerable<EdgeModel>>(edgesList);
             return mapped.ToList();
         }

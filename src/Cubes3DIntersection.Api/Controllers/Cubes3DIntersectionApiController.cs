@@ -1,12 +1,12 @@
-﻿using System;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Cubes3DIntersection.Application.Interfaces;
+﻿using Cubes3DIntersection.Application.Interfaces;
 using Cubes3DIntersection.Application.Models;
 using Cubes3DIntersection.Core.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Cubes3DIntersection.Api.Controllers
 {
@@ -15,7 +15,6 @@ namespace Cubes3DIntersection.Api.Controllers
     [Produces("application/json")]
     public class Cubes3DIntersectionApiController : ControllerBase
     {
-
         private readonly ICube3DIntersectionService _cube3DIntersectionService;
         private readonly IAppLogger<Cubes3DIntersectionApiController> _logger;
 
@@ -45,7 +44,6 @@ namespace Cubes3DIntersection.Api.Controllers
                 _logger.LogInformation($"Cubes 3D Intersection successfully generated.");
                 return CreatedAtAction(nameof(PostCubes3DIntersection), new { id = cubes3DDto.Id }, cubes3DDto);
             }
-
             catch (Exception ex)
             {
                 _logger.LogError($"An error occurred when posting the Cubes 3D Intersection.", ex.Message);

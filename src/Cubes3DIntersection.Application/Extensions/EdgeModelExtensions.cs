@@ -1,5 +1,5 @@
-﻿using System;
-using Cubes3DIntersection.Application.Models;
+﻿using Cubes3DIntersection.Application.Models;
+using System;
 
 namespace Cubes3DIntersection.Application.Extensions
 {

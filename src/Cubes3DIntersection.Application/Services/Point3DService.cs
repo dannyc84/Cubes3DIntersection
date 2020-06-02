@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Cubes3DIntersection.Application.Interfaces;
+﻿using Cubes3DIntersection.Application.Interfaces;
 using Cubes3DIntersection.Application.Mappers;
 using Cubes3DIntersection.Application.Models;
 using Cubes3DIntersection.Core.Entities;
 using Cubes3DIntersection.Core.Repository;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Cubes3DIntersection.Application.Services
 {

@@ -31,6 +31,5 @@ namespace Cubes3DIntersection.Core.Entities
                 IntersectionVolume = intersectionVolume
             };
         }
-
     }
 }

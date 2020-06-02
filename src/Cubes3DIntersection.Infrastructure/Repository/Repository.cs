@@ -1,10 +1,10 @@
-﻿using System.Collections.Generic;
-using Cubes3DIntersection.Core.Entities.Base;
-using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
-using Cubes3DIntersection.Infrastructure.Data;
+﻿using Cubes3DIntersection.Core.Entities.Base;
 using Cubes3DIntersection.Core.Repository;
+using Cubes3DIntersection.Infrastructure.Data;
 using Cubes3DIntersection.Infrastructure.Extensions;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Cubes3DIntersection.Infrastructure.Repository
 {

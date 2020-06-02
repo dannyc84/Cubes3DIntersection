@@ -24,6 +24,5 @@ namespace Cubes3DIntersection.Core.Entities
                 Id = cubeId
             };
         }
-        
     }
 }

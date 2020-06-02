@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using Cubes3DIntersection.Application.Models;
+using System.Collections.Generic;
 using System.Threading.Tasks;
-using Cubes3DIntersection.Application.Models;
 
 namespace Cubes3DIntersection.Application.Interfaces
 {

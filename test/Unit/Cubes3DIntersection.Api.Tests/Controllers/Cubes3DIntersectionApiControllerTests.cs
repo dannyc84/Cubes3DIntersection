@@ -27,26 +27,11 @@ namespace Cubes3DIntersection.Api.Tests.Controllers
         public async Task PostCubes3DIntersectionShouldTouch()
         {
             // Arrange
-            var cubes3DIntersectionApiController = CreateCubes3DIntersectionApiController();
-
-            var firstCube3D = new Cube3DModel
-            {
-                PointCoordinates = PointModelFactory.Create(2, 2, 2)
-            };
-
-            var secondCube3D = new Cube3DModel
-            {
-                PointCoordinates = PointModelFactory.Create(4, 2, 2)
-            };
-
-            var edgesLength = 2;
-
-            var cube3DIntersectionRequest = new Cube3DIntersectionModel
-            {
-                FirstCube3D = firstCube3D,
-                SecondCube3D = secondCube3D,
-                EdgesLength = edgesLength
-            };
+            Cubes3DIntersectionApiController cubes3DIntersectionApiController;
+            Cube3DModel firstCube3D, secondCube3D;
+            int edgesLength;
+            Cube3DIntersectionModel cube3DIntersectionRequest;
+            MakeCube3DIntersectionRequest(out cubes3DIntersectionApiController, out firstCube3D, out secondCube3D, out edgesLength, out cube3DIntersectionRequest);
 
             var cube3DIntersectionExpectedResponse = new Cube3DIntersectionModel
             {
@@ -77,6 +62,31 @@ namespace Cubes3DIntersection.Api.Tests.Controllers
             Assert.True(actualResult.IntersectionVolume == cube3DIntersectionExpectedResponse.IntersectionVolume);
 
             _mockCube3DIntersectionService.VerifyAll();
+        }
+
+        private void MakeCube3DIntersectionRequest(
+            out Cubes3DIntersectionApiController cubes3DIntersectionApiController,
+            out Cube3DModel firstCube3D,
+            out Cube3DModel secondCube3D,
+            out int edgesLength,
+            out Cube3DIntersectionModel cube3DIntersectionRequest)
+        {
+            cubes3DIntersectionApiController = CreateCubes3DIntersectionApiController();
+            firstCube3D = new Cube3DModel
+            {
+                PointCoordinates = PointModelFactory.Create(2, 2, 2)
+            };
+            secondCube3D = new Cube3DModel
+            {
+                PointCoordinates = PointModelFactory.Create(4, 2, 2)
+            };
+            edgesLength = 2;
+            cube3DIntersectionRequest = new Cube3DIntersectionModel
+            {
+                FirstCube3D = firstCube3D,
+                SecondCube3D = secondCube3D,
+                EdgesLength = edgesLength
+            };
         }
 
         [Fact]

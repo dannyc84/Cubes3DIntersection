@@ -30,6 +30,5 @@ namespace Cubes3DIntersection.Core.Entities
                 EdgesLength = edgesLength,
             };
         }
-
     }
 }

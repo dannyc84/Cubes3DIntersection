@@ -20,7 +20,8 @@ namespace Cubes3DIntersection.Core.Entities
 
         public static Point3D Create(int point3DId, int cube3DId, double x0, double y0, double z0)
         {
-            return new Point3D {
+            return new Point3D
+            {
                 Id = point3DId,
                 Cube3DId = cube3DId,
                 X0 = x0,

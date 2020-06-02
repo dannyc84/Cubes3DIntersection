@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Cubes3DIntersection.Application.Extensions;
+﻿using Cubes3DIntersection.Application.Extensions;
 using Cubes3DIntersection.Application.Factories;
 using Cubes3DIntersection.Application.Interfaces;
 using Cubes3DIntersection.Application.Mappers;
 using Cubes3DIntersection.Application.Models;
 using Cubes3DIntersection.Core.Entities;
 using Cubes3DIntersection.Core.Repository;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Cubes3DIntersection.Application.Services
 {
@@ -99,7 +99,7 @@ namespace Cubes3DIntersection.Application.Services
         {
             var CubePointDto = cube3DModel?.PointCoordinates;
             CubePointDto.Cube3DId = cube3DModel.Id;
-             await _point3DService.Update(CubePointDto);
+            await _point3DService.Update(CubePointDto);
 
             var edgeWithDto = await CreateEdgeDto(CubePointDto.X0, edgesLength, CubePointDto.Cube3DId);
 

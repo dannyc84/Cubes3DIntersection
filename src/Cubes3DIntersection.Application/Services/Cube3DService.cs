@@ -72,6 +72,5 @@ namespace Cubes3DIntersection.Application
             await _cube3DRepository.Update(mappedEntity);
             _logger.LogInformation($"Entity successfully updated - {serviceName}");
         }
-
     }
 }
