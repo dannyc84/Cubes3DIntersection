@@ -147,7 +147,15 @@ Due to time constraints, instead of unit tests for all the projects, some tests 
 * Full architecture with responsibility separation of concerns
 * SOLID and Clean Code
 * Domain Driven Design (Layers and Domain Model Pattern)
+* Unit of Work
 * Repository and Generic Repository
+* Monolitic Deployment Architecture
+
+## Disclaimer
+
+* This repository is not intended to be a definitive solution.
+* This repository not implemented a lot of 3rd party packages, we are try to avoid the over engineering when building on best practices.
+* Beware to use in production way.
 
 ## Contributors
 
