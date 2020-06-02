@@ -159,6 +159,10 @@ Thanks to the following people who have contributed to this project:
 
 If you want to contact me you can reach me at daniele.crivello84@libero.it.
 
+## Code of Conduct
+
+This project uses the following code of conduct: [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md).
+
 ## License
 
 This project uses the following license: [MIT](LICENSE.md).
