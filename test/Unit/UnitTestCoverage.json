@@ -1,0 +1,3162 @@
+﻿{
+ "DotCoverVersion": "2020.1.2",
+ "Kind": "SolutionRoot",
+ "CoveredStatements": 103,
+ "TotalStatements": 855,
+ "CoveragePercent": 12,
+ "Children": [
+  {
+   "Kind": "SolutionFolder",
+   "Name": "src",
+   "CoveredStatements": 35,
+   "TotalStatements": 760,
+   "CoveragePercent": 5,
+   "Children": [
+    {
+     "Kind": "Project",
+     "Name": "Cubes3DIntersection.Api",
+     "CoveredStatements": 16,
+     "TotalStatements": 109,
+     "CoveragePercent": 15,
+     "Children": [
+      {
+       "Kind": "Namespace",
+       "Name": "Cubes3DIntersection",
+       "CoveredStatements": 16,
+       "TotalStatements": 109,
+       "CoveragePercent": 15,
+       "Children": [
+        {
+         "Kind": "Namespace",
+         "Name": "Api",
+         "CoveredStatements": 16,
+         "TotalStatements": 47,
+         "CoveragePercent": 34,
+         "Children": [
+          {
+           "Kind": "Namespace",
+           "Name": "Controllers",
+           "CoveredStatements": 16,
+           "TotalStatements": 44,
+           "CoveragePercent": 36,
+           "Children": [
+            {
+             "Kind": "Type",
+             "Name": "Cubes3DIntersectionApiController",
+             "CoveredStatements": 16,
+             "TotalStatements": 38,
+             "CoveragePercent": 42,
+             "Children": [
+              {
+               "Kind": "Constructor",
+               "Name": "Cubes3DIntersectionApiController(ICube3DIntersectionService,IAppLogger<Cubes3DIntersectionApiController>)",
+               "CoveredStatements": 5,
+               "TotalStatements": 5,
+               "CoveragePercent": 100
+              },
+              {
+               "Kind": "Method",
+               "Name": "ModelErrors():string",
+               "CoveredStatements": 0,
+               "TotalStatements": 13,
+               "CoveragePercent": 0,
+               "Children": [
+                {
+                 "Kind": "OwnCoverage",
+                 "CoveredStatements": 0,
+                 "TotalStatements": 12,
+                 "CoveragePercent": 0
+                },
+                {
+                 "Kind": "AnonymousMethod",
+                 "Name": "(ModelStateEntry):IEnumerable<ModelError>",
+                 "CoveredStatements": 0,
+                 "TotalStatements": 1,
+                 "CoveragePercent": 0
+                }
+               ]
+              },
+              {
+               "Kind": "Method",
+               "Name": "PostCubes3DIntersection(Cube3DIntersectionModel):Task<ActionResult<Cube3DIntersectionModel>>",
+               "CoveredStatements": 8,
+               "TotalStatements": 14,
+               "CoveragePercent": 57,
+               "Children": [
+                {
+                 "Kind": "InternalCompiledMethod",
+                 "Name": "MoveNext():void",
+                 "CoveredStatements": 8,
+                 "TotalStatements": 14,
+                 "CoveragePercent": 57
+                }
+               ]
+              },
+              {
+               "Kind": "Method",
+               "Name": "ValidatePostCubes3DIntersection(Cube3DIntersectionModel):void",
+               "CoveredStatements": 3,
+               "TotalStatements": 6,
+               "CoveragePercent": 50
+              }
+             ]
+            },
+            {
+             "Kind": "Type",
+             "Name": "HomeController",
+             "CoveredStatements": 0,
+             "TotalStatements": 6,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "Method",
+               "Name": "Error():IActionResult",
+               "CoveredStatements": 0,
+               "TotalStatements": 3,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "Method",
+               "Name": "Index():RedirectResult",
+               "CoveredStatements": 0,
+               "TotalStatements": 3,
+               "CoveragePercent": 0
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "Kind": "Namespace",
+           "Name": "Views",
+           "CoveredStatements": 0,
+           "TotalStatements": 3,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Type",
+             "Name": "ErrorViewModel",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "AutoProperty",
+               "Name": "RequestId:string",
+               "CoveredStatements": 0,
+               "TotalStatements": 2,
+               "CoveragePercent": 0,
+               "Children": [
+                {
+                 "Kind": "PropertyGetter",
+                 "CoveredStatements": 0,
+                 "TotalStatements": 1,
+                 "CoveragePercent": 0
+                },
+                {
+                 "Kind": "PropertySetter",
+                 "CoveredStatements": 0,
+                 "TotalStatements": 1,
+                 "CoveragePercent": 0
+                }
+               ]
+              },
+              {
+               "Kind": "Property",
+               "Name": "ShowRequestId:bool",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0,
+               "Children": [
+                {
+                 "Kind": "PropertyGetter",
+                 "CoveredStatements": 0,
+                 "TotalStatements": 1,
+                 "CoveragePercent": 0
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Kind": "Namespace",
+         "Name": "Application",
+         "CoveredStatements": 0,
+         "TotalStatements": 62,
+         "CoveragePercent": 0,
+         "Children": [
+          {
+           "Kind": "Type",
+           "Name": "Program",
+           "CoveredStatements": 0,
+           "TotalStatements": 7,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Method",
+             "Name": "CreateHostBuilder(string[]):IHostBuilder",
+             "CoveredStatements": 0,
+             "TotalStatements": 4,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "OwnCoverage",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(IWebHostBuilder):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 3,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "Main(string[]):void",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "Startup",
+           "CoveredStatements": 0,
+           "TotalStatements": 55,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "Startup(IConfiguration)",
+             "CoveredStatements": 0,
+             "TotalStatements": 4,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Configuration:IConfiguration",
+             "CoveredStatements": 0,
+             "TotalStatements": 1,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "Configure(IApplicationBuilder,IWebHostEnvironment):void",
+             "CoveredStatements": 0,
+             "TotalStatements": 21,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "OwnCoverage",
+               "CoveredStatements": 0,
+               "TotalStatements": 15,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(SwaggerUIOptions):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 3,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(IEndpointRouteBuilder):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 3,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "ConfigureCubes3DIntersectionServices(IServiceCollection):void",
+             "CoveredStatements": 0,
+             "TotalStatements": 10,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Method",
+             "Name": "ConfigureDatabases(IServiceCollection):void",
+             "CoveredStatements": 0,
+             "TotalStatements": 4,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "OwnCoverage",
+               "CoveredStatements": 0,
+               "TotalStatements": 3,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(DbContextOptionsBuilder):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "ConfigureServices(IServiceCollection):void",
+             "CoveredStatements": 0,
+             "TotalStatements": 15,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "OwnCoverage",
+               "CoveredStatements": 0,
+               "TotalStatements": 5,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(JsonOptions):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 7,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(SwaggerGenOptions):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 3,
+               "CoveragePercent": 0
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "Kind": "Project",
+     "Name": "Cubes3DIntersection.Application",
+     "CoveredStatements": 19,
+     "TotalStatements": 299,
+     "CoveragePercent": 6,
+     "Children": [
+      {
+       "Kind": "Namespace",
+       "Name": "Cubes3DIntersection.Application",
+       "CoveredStatements": 19,
+       "TotalStatements": 299,
+       "CoveragePercent": 6,
+       "Children": [
+        {
+         "Kind": "Namespace",
+         "Name": "Exceptions",
+         "CoveredStatements": 0,
+         "TotalStatements": 6,
+         "CoveragePercent": 0,
+         "Children": [
+          {
+           "Kind": "Type",
+           "Name": "ApplicationException",
+           "CoveredStatements": 0,
+           "TotalStatements": 6,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "ApplicationException(string)",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Constructor",
+             "Name": "ApplicationException(string,Exception)",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Kind": "Namespace",
+         "Name": "Extensions",
+         "CoveredStatements": 0,
+         "TotalStatements": 21,
+         "CoveragePercent": 0,
+         "Children": [
+          {
+           "Kind": "Type",
+           "Name": "CubeModelExtensions",
+           "CoveredStatements": 0,
+           "TotalStatements": 2,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Method",
+             "Name": "Collision(Cube3DModel,Cube3DModel):bool",
+             "CoveredStatements": 0,
+             "TotalStatements": 1,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Method",
+             "Name": "IntersectionVolume(Cube3DModel,Cube3DModel):double",
+             "CoveredStatements": 0,
+             "TotalStatements": 1,
+             "CoveragePercent": 0
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "EdgeModelExtensions",
+           "CoveredStatements": 0,
+           "TotalStatements": 19,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Method",
+             "Name": "Collision(EdgeModel,EdgeModel):bool",
+             "CoveredStatements": 0,
+             "TotalStatements": 9,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Method",
+             "Name": "Difference(EdgeModel,EdgeModel):double",
+             "CoveredStatements": 0,
+             "TotalStatements": 1,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Method",
+             "Name": "Overlap(EdgeModel,EdgeModel):double",
+             "CoveredStatements": 0,
+             "TotalStatements": 9,
+             "CoveragePercent": 0
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Kind": "Namespace",
+         "Name": "Factories",
+         "CoveredStatements": 1,
+         "TotalStatements": 2,
+         "CoveragePercent": 50,
+         "Children": [
+          {
+           "Kind": "Type",
+           "Name": "EdgeModelFactory",
+           "CoveredStatements": 0,
+           "TotalStatements": 1,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Method",
+             "Name": "Create(double,double,int):EdgeModel",
+             "CoveredStatements": 0,
+             "TotalStatements": 1,
+             "CoveragePercent": 0
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "PointModelFactory",
+           "CoveredStatements": 1,
+           "TotalStatements": 1,
+           "CoveragePercent": 100,
+           "Children": [
+            {
+             "Kind": "Method",
+             "Name": "Create(double,double,double):Point3DModel",
+             "CoveredStatements": 1,
+             "TotalStatements": 1,
+             "CoveragePercent": 100
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Kind": "Namespace",
+         "Name": "Mappers",
+         "CoveredStatements": 0,
+         "TotalStatements": 19,
+         "CoveragePercent": 0,
+         "Children": [
+          {
+           "Kind": "Type",
+           "Name": "Cubes3DIntersectionDtoMapper",
+           "CoveredStatements": 0,
+           "TotalStatements": 7,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "Cubes3DIntersectionDtoMapper()",
+             "CoveredStatements": 0,
+             "TotalStatements": 7,
+             "CoveragePercent": 0
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "ObjectMapper",
+           "CoveredStatements": 0,
+           "TotalStatements": 12,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "ObjectMapper()",
+             "CoveredStatements": 0,
+             "TotalStatements": 11,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "OwnCoverage",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "():IMapper",
+               "CoveredStatements": 0,
+               "TotalStatements": 10,
+               "CoveragePercent": 0,
+               "Children": [
+                {
+                 "Kind": "OwnCoverage",
+                 "CoveredStatements": 0,
+                 "TotalStatements": 5,
+                 "CoveragePercent": 0
+                },
+                {
+                 "Kind": "AnonymousMethod",
+                 "Name": "(IMapperConfigurationExpression):void",
+                 "CoveredStatements": 0,
+                 "TotalStatements": 5,
+                 "CoveragePercent": 0,
+                 "Children": [
+                  {
+                   "Kind": "OwnCoverage",
+                   "CoveredStatements": 0,
+                   "TotalStatements": 4,
+                   "CoveragePercent": 0
+                  },
+                  {
+                   "Kind": "AnonymousMethod",
+                   "Name": "(PropertyInfo):bool",
+                   "CoveredStatements": 0,
+                   "TotalStatements": 1,
+                   "CoveragePercent": 0
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "Kind": "Property",
+             "Name": "Mapper:IMapper",
+             "CoveredStatements": 0,
+             "TotalStatements": 1,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Kind": "Namespace",
+         "Name": "Models",
+         "CoveredStatements": 18,
+         "TotalStatements": 70,
+         "CoveragePercent": 26,
+         "Children": [
+          {
+           "Kind": "Namespace",
+           "Name": "Base",
+           "CoveredStatements": 0,
+           "TotalStatements": 2,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Type",
+             "Name": "ModelBase",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "AutoProperty",
+               "Name": "Id:int",
+               "CoveredStatements": 0,
+               "TotalStatements": 2,
+               "CoveragePercent": 0,
+               "Children": [
+                {
+                 "Kind": "PropertyGetter",
+                 "CoveredStatements": 0,
+                 "TotalStatements": 1,
+                 "CoveragePercent": 0
+                },
+                {
+                 "Kind": "PropertySetter",
+                 "CoveredStatements": 0,
+                 "TotalStatements": 1,
+                 "CoveragePercent": 0
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "Cube3DIntersectionModel",
+           "CoveredStatements": 8,
+           "TotalStatements": 14,
+           "CoveragePercent": 57,
+           "Children": [
+            {
+             "Kind": "AutoProperty",
+             "Name": "Collision:Nullable<bool>",
+             "CoveredStatements": 2,
+             "TotalStatements": 2,
+             "CoveragePercent": 100,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 1,
+               "TotalStatements": 1,
+               "CoveragePercent": 100
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 1,
+               "TotalStatements": 1,
+               "CoveragePercent": 100
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "EdgesLength:double",
+             "CoveredStatements": 1,
+             "TotalStatements": 2,
+             "CoveragePercent": 50,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 1,
+               "TotalStatements": 1,
+               "CoveragePercent": 100
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "FirstCube3D:Cube3DModel",
+             "CoveredStatements": 1,
+             "TotalStatements": 2,
+             "CoveragePercent": 50,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 1,
+               "TotalStatements": 1,
+               "CoveragePercent": 100
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Id:int",
+             "CoveredStatements": 1,
+             "TotalStatements": 2,
+             "CoveragePercent": 50,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 1,
+               "TotalStatements": 1,
+               "CoveragePercent": 100
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "IntersectionVolume:Nullable<double>",
+             "CoveredStatements": 2,
+             "TotalStatements": 2,
+             "CoveragePercent": 100,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 1,
+               "TotalStatements": 1,
+               "CoveragePercent": 100
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 1,
+               "TotalStatements": 1,
+               "CoveragePercent": 100
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "SecondCube3D:Cube3DModel",
+             "CoveredStatements": 1,
+             "TotalStatements": 2,
+             "CoveragePercent": 50,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 1,
+               "TotalStatements": 1,
+               "CoveragePercent": 100
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "SecondCube3DId:int",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "Cube3DModel",
+           "CoveredStatements": 1,
+           "TotalStatements": 6,
+           "CoveragePercent": 17,
+           "Children": [
+            {
+             "Kind": "AutoProperty",
+             "Name": "Edges:IList<EdgeModel>",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Id:int",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "PointCoordinates:Point3DModel",
+             "CoveredStatements": 1,
+             "TotalStatements": 2,
+             "CoveragePercent": 50,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 1,
+               "TotalStatements": 1,
+               "CoveragePercent": 100
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "EdgeLengthModel",
+           "CoveredStatements": 0,
+           "TotalStatements": 2,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "AutoProperty",
+             "Name": "EdgesLength:double",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "EdgeModel",
+           "CoveredStatements": 0,
+           "TotalStatements": 21,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "EdgeModel(double,double,int)",
+             "CoveredStatements": 0,
+             "TotalStatements": 8,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Constructor",
+             "Name": "EdgeModel()",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Cube3DId:int",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "End:double",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Id:int",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Point3DCenter:double",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Start:double",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "Point3DModel",
+           "CoveredStatements": 9,
+           "TotalStatements": 21,
+           "CoveragePercent": 43,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "Point3DModel()",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Constructor",
+             "Name": "Point3DModel(double,double,double)",
+             "CoveredStatements": 6,
+             "TotalStatements": 6,
+             "CoveragePercent": 100
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Cube3D:Cube3DModel",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Cube3DId:int",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Id:int",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "X0:double",
+             "CoveredStatements": 1,
+             "TotalStatements": 2,
+             "CoveragePercent": 50,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 1,
+               "TotalStatements": 1,
+               "CoveragePercent": 100
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Y0:double",
+             "CoveredStatements": 1,
+             "TotalStatements": 2,
+             "CoveragePercent": 50,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 1,
+               "TotalStatements": 1,
+               "CoveragePercent": 100
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Z0:double",
+             "CoveredStatements": 1,
+             "TotalStatements": 2,
+             "CoveragePercent": 50,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 1,
+               "TotalStatements": 1,
+               "CoveragePercent": 100
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "Points3DModel",
+           "CoveredStatements": 0,
+           "TotalStatements": 4,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "AutoProperty",
+             "Name": "Id:int",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "PointCoordinates:IEnumerable<Point3DModel>",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Kind": "Namespace",
+         "Name": "Services",
+         "CoveredStatements": 0,
+         "TotalStatements": 146,
+         "CoveragePercent": 0,
+         "Children": [
+          {
+           "Kind": "Type",
+           "Name": "Cube3DIntersectionService",
+           "CoveredStatements": 0,
+           "TotalStatements": 68,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "Cube3DIntersectionService(IGenericRepository<Cube3DIntersection>,ICube3DService,IPoint3DService,IEdgeService,IAppLogger<Cube3DIntersectionService>)",
+             "CoveredStatements": 0,
+             "TotalStatements": 8,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Method",
+             "Name": "Create(Cube3DIntersectionModel):Task<Cube3DIntersectionModel>",
+             "CoveredStatements": 0,
+             "TotalStatements": 4,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 4,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "CreateCubesIntersectionDto(Cube3DIntersectionModel):Task<Cube3DIntersectionModel>",
+             "CoveredStatements": 0,
+             "TotalStatements": 15,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 15,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "CreateEdgeDto(double,double,int):Task<EdgeModel>",
+             "CoveredStatements": 0,
+             "TotalStatements": 5,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 5,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "GetCube3DById(int):Task<Cube3DIntersectionModel>",
+             "CoveredStatements": 0,
+             "TotalStatements": 5,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 5,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "GetCubes3DList():Task<IEnumerable<Cube3DIntersectionModel>>",
+             "CoveredStatements": 0,
+             "TotalStatements": 5,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 5,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "UpdateCubeDto(Cube3DModel,double):Task<Cube3DModel>",
+             "CoveredStatements": 0,
+             "TotalStatements": 11,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 11,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "UpdateCubesIntersectionDto(Cube3DIntersectionModel):Task<Cube3DIntersectionModel>",
+             "CoveredStatements": 0,
+             "TotalStatements": 9,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 9,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "ValidateIfExist(Cube3DIntersectionModel):Task",
+             "CoveredStatements": 0,
+             "TotalStatements": 6,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 6,
+               "CoveragePercent": 0
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "EdgeService",
+           "CoveredStatements": 0,
+           "TotalStatements": 39,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "EdgeService(IGenericRepository<Edge>,IAppLogger<EdgeService>)",
+             "CoveredStatements": 0,
+             "TotalStatements": 5,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Method",
+             "Name": "Create(EdgeModel):Task<EdgeModel>",
+             "CoveredStatements": 0,
+             "TotalStatements": 10,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 10,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "GetCubes3DList():Task<IEnumerable<EdgeModel>>",
+             "CoveredStatements": 0,
+             "TotalStatements": 5,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 5,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "GetEdgeById(int):Task<EdgeModel>",
+             "CoveredStatements": 0,
+             "TotalStatements": 5,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 5,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "Update(EdgeModel):Task",
+             "CoveredStatements": 0,
+             "TotalStatements": 7,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 7,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "ValidateIfExist(EdgeModel):Task",
+             "CoveredStatements": 0,
+             "TotalStatements": 7,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 7,
+               "CoveragePercent": 0
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "Point3DService",
+           "CoveredStatements": 0,
+           "TotalStatements": 39,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "Point3DService(IGenericRepository<Point3D>,IAppLogger<Point3DService>)",
+             "CoveredStatements": 0,
+             "TotalStatements": 5,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Method",
+             "Name": "Create(Point3DModel):Task<Point3DModel>",
+             "CoveredStatements": 0,
+             "TotalStatements": 10,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 10,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "GetPointById(int):Task<Point3DModel>",
+             "CoveredStatements": 0,
+             "TotalStatements": 5,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 5,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "GetPoints3DList():Task<IEnumerable<Point3DModel>>",
+             "CoveredStatements": 0,
+             "TotalStatements": 5,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 5,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "Update(Point3DModel):Task",
+             "CoveredStatements": 0,
+             "TotalStatements": 7,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 7,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "ValidateIfExist(Point3DModel):Task",
+             "CoveredStatements": 0,
+             "TotalStatements": 7,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 7,
+               "CoveragePercent": 0
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Kind": "Type",
+         "Name": "Cube3DService",
+         "CoveredStatements": 0,
+         "TotalStatements": 35,
+         "CoveragePercent": 0,
+         "Children": [
+          {
+           "Kind": "Constructor",
+           "Name": "Cube3DService(IGenericRepository<Cube3D>,IPoint3DService,IEdgeService,IAppLogger<Cube3DService>)",
+           "CoveredStatements": 0,
+           "TotalStatements": 7,
+           "CoveragePercent": 0
+          },
+          {
+           "Kind": "Method",
+           "Name": "Create(Cube3DModel):Task<Cube3DModel>",
+           "CoveredStatements": 0,
+           "TotalStatements": 8,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "InternalCompiledMethod",
+             "Name": "MoveNext():void",
+             "CoveredStatements": 0,
+             "TotalStatements": 8,
+             "CoveragePercent": 0
+            }
+           ]
+          },
+          {
+           "Kind": "Method",
+           "Name": "GetCube3DById(int):Task<Cube3DModel>",
+           "CoveredStatements": 0,
+           "TotalStatements": 5,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "InternalCompiledMethod",
+             "Name": "MoveNext():void",
+             "CoveredStatements": 0,
+             "TotalStatements": 5,
+             "CoveragePercent": 0
+            }
+           ]
+          },
+          {
+           "Kind": "Method",
+           "Name": "GetCubes3DList():Task<IEnumerable<Cube3DModel>>",
+           "CoveredStatements": 0,
+           "TotalStatements": 5,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "InternalCompiledMethod",
+             "Name": "MoveNext():void",
+             "CoveredStatements": 0,
+             "TotalStatements": 5,
+             "CoveragePercent": 0
+            }
+           ]
+          },
+          {
+           "Kind": "Method",
+           "Name": "Update(Cube3DModel):Task",
+           "CoveredStatements": 0,
+           "TotalStatements": 5,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "InternalCompiledMethod",
+             "Name": "MoveNext():void",
+             "CoveredStatements": 0,
+             "TotalStatements": 5,
+             "CoveragePercent": 0
+            }
+           ]
+          },
+          {
+           "Kind": "Method",
+           "Name": "ValidateIfExist(Cube3DModel):Task",
+           "CoveredStatements": 0,
+           "TotalStatements": 5,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "InternalCompiledMethod",
+             "Name": "MoveNext():void",
+             "CoveredStatements": 0,
+             "TotalStatements": 5,
+             "CoveragePercent": 0
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "Kind": "Project",
+     "Name": "Cubes3DIntersection.Core",
+     "CoveredStatements": 0,
+     "TotalStatements": 106,
+     "CoveragePercent": 0,
+     "Children": [
+      {
+       "Kind": "Namespace",
+       "Name": "Cubes3DIntersection.Core",
+       "CoveredStatements": 0,
+       "TotalStatements": 106,
+       "CoveragePercent": 0,
+       "Children": [
+        {
+         "Kind": "Namespace",
+         "Name": "Entities",
+         "CoveredStatements": 0,
+         "TotalStatements": 68,
+         "CoveragePercent": 0,
+         "Children": [
+          {
+           "Kind": "Namespace",
+           "Name": "Base",
+           "CoveredStatements": 0,
+           "TotalStatements": 2,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Type",
+             "Name": "Entity",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "AutoProperty",
+               "Name": "Id:int",
+               "CoveredStatements": 0,
+               "TotalStatements": 2,
+               "CoveragePercent": 0,
+               "Children": [
+                {
+                 "Kind": "PropertyGetter",
+                 "CoveredStatements": 0,
+                 "TotalStatements": 1,
+                 "CoveragePercent": 0
+                },
+                {
+                 "Kind": "PropertySetter",
+                 "CoveredStatements": 0,
+                 "TotalStatements": 1,
+                 "CoveragePercent": 0
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "Cube3D",
+           "CoveredStatements": 0,
+           "TotalStatements": 14,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "Cube3D()",
+             "CoveredStatements": 0,
+             "TotalStatements": 5,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Cube3DIntersection:ICollection<Cube3DIntersection>",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Edges:ICollection<Edge>",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "PointCoordinates:Point3D",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "Create(int):Cube3D",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "Cube3DIntersection",
+           "CoveredStatements": 0,
+           "TotalStatements": 18,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "Cube3DIntersection()",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Collision:Nullable<bool>",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "EdgesLength:double",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "FirstCube3D:Cube3D",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "IntersectionVolume:Nullable<double>",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "SecondCube3D:Cube3D",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "SecondCube3DId:int",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "Create(int,int,double,Nullable<bool>,Nullable<double>):Cube3DIntersection",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "Edge",
+           "CoveredStatements": 0,
+           "TotalStatements": 16,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "Edge()",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Cube3DId:int",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "EdgesLength:double",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "End:double",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Point3DCenter:double",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Start:double",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "Create(int,int,double,double):Edge",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "EdgeLength",
+           "CoveredStatements": 0,
+           "TotalStatements": 2,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "AutoProperty",
+             "Name": "EdgesLength:double",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "Point3D",
+           "CoveredStatements": 0,
+           "TotalStatements": 16,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "Point3D()",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Cube3D:Cube3D",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Cube3DId:int",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "X0:double",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Y0:double",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Z0:double",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "Create(int,int,double,double,double):Point3D",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Kind": "Namespace",
+         "Name": "Exceptions",
+         "CoveredStatements": 0,
+         "TotalStatements": 6,
+         "CoveragePercent": 0,
+         "Children": [
+          {
+           "Kind": "Type",
+           "Name": "CoreException",
+           "CoveredStatements": 0,
+           "TotalStatements": 6,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "CoreException(string)",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Constructor",
+             "Name": "CoreException(string,Exception)",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Kind": "Namespace",
+         "Name": "ValueObjects.Base",
+         "CoveredStatements": 0,
+         "TotalStatements": 32,
+         "CoveragePercent": 0,
+         "Children": [
+          {
+           "Kind": "Type",
+           "Name": "ValueObject",
+           "CoveredStatements": 0,
+           "TotalStatements": 32,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Method",
+             "Name": "EqualOperator(ValueObject,ValueObject):bool",
+             "CoveredStatements": 0,
+             "TotalStatements": 6,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Method",
+             "Name": "Equals(object):bool",
+             "CoveredStatements": 0,
+             "TotalStatements": 18,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Method",
+             "Name": "GetHashCode():int",
+             "CoveredStatements": 0,
+             "TotalStatements": 5,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "OwnCoverage",
+               "CoveredStatements": 0,
+               "TotalStatements": 3,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(object):int",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(int,int):int",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "NotEqualOperator(ValueObject,ValueObject):bool",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "Kind": "Project",
+     "Name": "Cubes3DIntersection.Infrastructure",
+     "CoveredStatements": 0,
+     "TotalStatements": 246,
+     "CoveragePercent": 0,
+     "Children": [
+      {
+       "Kind": "Namespace",
+       "Name": "Cubes3DIntersection.Infrastructure",
+       "CoveredStatements": 0,
+       "TotalStatements": 246,
+       "CoveragePercent": 0,
+       "Children": [
+        {
+         "Kind": "Namespace",
+         "Name": "Data",
+         "CoveredStatements": 0,
+         "TotalStatements": 44,
+         "CoveragePercent": 0,
+         "Children": [
+          {
+           "Kind": "Type",
+           "Name": "Cube3DIntersectionDbContext",
+           "CoveredStatements": 0,
+           "TotalStatements": 18,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "Cube3DIntersectionDbContext(DbContextOptions<Cube3DIntersectionDbContext>)",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Cube3D:DbSet<Cube3D>",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Cube3DIntersection:DbSet<Cube3DIntersection>",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Edges:DbSet<Edge>",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "AutoProperty",
+             "Name": "Points3D:DbSet<Point3D>",
+             "CoveredStatements": 0,
+             "TotalStatements": 2,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "PropertyGetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "PropertySetter",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "OnModelCreating(ModelBuilder):void",
+             "CoveredStatements": 0,
+             "TotalStatements": 7,
+             "CoveragePercent": 0
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "Cube3DIntersectionDbContextSeed",
+           "CoveredStatements": 0,
+           "TotalStatements": 26,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Method",
+             "Name": "GetPreconfiguredCubes3DIntersection():IEnumerable<Cube3DIntersection>",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Method",
+             "Name": "SeedAsync(Cube3DIntersectionDbContext,ILoggerFactory,Nullable<int>):Task",
+             "CoveredStatements": 0,
+             "TotalStatements": 23,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 23,
+               "CoveragePercent": 0
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Kind": "Namespace",
+         "Name": "Exceptions",
+         "CoveredStatements": 0,
+         "TotalStatements": 6,
+         "CoveragePercent": 0,
+         "Children": [
+          {
+           "Kind": "Type",
+           "Name": "InfrastructureException",
+           "CoveredStatements": 0,
+           "TotalStatements": 6,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "InfrastructureException(string)",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Constructor",
+             "Name": "InfrastructureException(string,Exception)",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Kind": "Namespace",
+         "Name": "Extensions",
+         "CoveredStatements": 0,
+         "TotalStatements": 9,
+         "CoveragePercent": 0,
+         "Children": [
+          {
+           "Kind": "Type",
+           "Name": "Cube3DIntersectionDbContextExtensions",
+           "CoveredStatements": 0,
+           "TotalStatements": 9,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Method",
+             "Name": "DetachLocal<T>(Cube3DIntersectionDbContext,T,int):void",
+             "CoveredStatements": 0,
+             "TotalStatements": 9,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "OwnCoverage",
+               "CoveredStatements": 0,
+               "TotalStatements": 8,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(T):bool",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Kind": "Namespace",
+         "Name": "Logging",
+         "CoveredStatements": 0,
+         "TotalStatements": 16,
+         "CoveragePercent": 0,
+         "Children": [
+          {
+           "Kind": "Type",
+           "Name": "LoggerAdapter<T>",
+           "CoveredStatements": 0,
+           "TotalStatements": 16,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "LoggerAdapter(ILoggerFactory)",
+             "CoveredStatements": 0,
+             "TotalStatements": 4,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Constructor",
+             "Name": "LoggerAdapter()",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Method",
+             "Name": "LogError(string,params object[]):void",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Method",
+             "Name": "LogInformation(string,params object[]):void",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Method",
+             "Name": "LogWarning(string,params object[]):void",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Kind": "Namespace",
+         "Name": "Migrations",
+         "CoveredStatements": 0,
+         "TotalStatements": 152,
+         "CoveragePercent": 0,
+         "Children": [
+          {
+           "Kind": "Type",
+           "Name": "Cube3DIntersectionDbContextModelSnapshot",
+           "CoveredStatements": 0,
+           "TotalStatements": 58,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Method",
+             "Name": "BuildModel(ModelBuilder):void",
+             "CoveredStatements": 0,
+             "TotalStatements": 58,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "OwnCoverage",
+               "CoveredStatements": 0,
+               "TotalStatements": 10,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(EntityTypeBuilder):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 5,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(EntityTypeBuilder):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 12,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(EntityTypeBuilder):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 11,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(EntityTypeBuilder):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 9,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(EntityTypeBuilder):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 3,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(EntityTypeBuilder):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 5,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(EntityTypeBuilder):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 3,
+               "CoveragePercent": 0
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "Initial",
+           "CoveredStatements": 0,
+           "TotalStatements": 94,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Method",
+             "Name": "BuildTargetModel(ModelBuilder):void",
+             "CoveredStatements": 0,
+             "TotalStatements": 58,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "OwnCoverage",
+               "CoveredStatements": 0,
+               "TotalStatements": 10,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(EntityTypeBuilder):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 5,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(EntityTypeBuilder):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 12,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(EntityTypeBuilder):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 11,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(EntityTypeBuilder):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 9,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(EntityTypeBuilder):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 3,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(EntityTypeBuilder):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 5,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(EntityTypeBuilder):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 3,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "Down(MigrationBuilder):void",
+             "CoveredStatements": 0,
+             "TotalStatements": 6,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Method",
+             "Name": "Up(MigrationBuilder):void",
+             "CoveredStatements": 0,
+             "TotalStatements": 30,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "OwnCoverage",
+               "CoveredStatements": 0,
+               "TotalStatements": 9,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(ColumnsBuilder):{OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>}",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(CreateTableBuilder<{OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>}>):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 3,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(ColumnsBuilder):{OperationBuilder<AddColumnOperation>}",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(CreateTableBuilder<{OperationBuilder<AddColumnOperation>}>):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 4,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(ColumnsBuilder):{OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>}",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(CreateTableBuilder<{OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>}>):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 6,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(ColumnsBuilder):{OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>}",
+               "CoveredStatements": 0,
+               "TotalStatements": 1,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(CreateTableBuilder<{OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>,OperationBuilder<AddColumnOperation>}>):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 4,
+               "CoveragePercent": 0
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "Kind": "Namespace",
+         "Name": "Repository",
+         "CoveredStatements": 0,
+         "TotalStatements": 19,
+         "CoveragePercent": 0,
+         "Children": [
+          {
+           "Kind": "Type",
+           "Name": "Repository<T>",
+           "CoveredStatements": 0,
+           "TotalStatements": 19,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Constructor",
+             "Name": "Repository(Cube3DIntersectionDbContext)",
+             "CoveredStatements": 0,
+             "TotalStatements": 4,
+             "CoveragePercent": 0
+            },
+            {
+             "Kind": "Method",
+             "Name": "Create(T):Task<T>",
+             "CoveredStatements": 0,
+             "TotalStatements": 5,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 5,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "GetAll():Task<IEnumerable<T>>",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 3,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "GetById(int):Task<T>",
+             "CoveredStatements": 0,
+             "TotalStatements": 3,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 3,
+               "CoveragePercent": 0
+              }
+             ]
+            },
+            {
+             "Kind": "Method",
+             "Name": "Update(T):Task",
+             "CoveredStatements": 0,
+             "TotalStatements": 4,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "InternalCompiledMethod",
+               "Name": "MoveNext():void",
+               "CoveredStatements": 0,
+               "TotalStatements": 4,
+               "CoveragePercent": 0
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "Kind": "SolutionFolder",
+   "Name": "test",
+   "CoveredStatements": 68,
+   "TotalStatements": 95,
+   "CoveragePercent": 72,
+   "Children": [
+    {
+     "Kind": "SolutionFolder",
+     "Name": "Unit",
+     "CoveredStatements": 68,
+     "TotalStatements": 95,
+     "CoveragePercent": 72,
+     "Children": [
+      {
+       "Kind": "Project",
+       "Name": "Cubes3DIntersection.Api.Tests",
+       "CoveredStatements": 68,
+       "TotalStatements": 95,
+       "CoveragePercent": 72,
+       "Children": [
+        {
+         "Kind": "Namespace",
+         "Name": "Cubes3DIntersection.Api.Tests",
+         "CoveredStatements": 68,
+         "TotalStatements": 95,
+         "CoveragePercent": 72,
+         "Children": [
+          {
+           "Kind": "Namespace",
+           "Name": "Controllers",
+           "CoveredStatements": 68,
+           "TotalStatements": 68,
+           "CoveragePercent": 100,
+           "Children": [
+            {
+             "Kind": "Type",
+             "Name": "Cubes3DIntersectionApiControllerTests",
+             "CoveredStatements": 68,
+             "TotalStatements": 68,
+             "CoveragePercent": 100,
+             "Children": [
+              {
+               "Kind": "Constructor",
+               "Name": "Cubes3DIntersectionApiControllerTests(CustomWebApplicationFactory<Startup>)",
+               "CoveredStatements": 5,
+               "TotalStatements": 5,
+               "CoveragePercent": 100
+              },
+              {
+               "Kind": "Method",
+               "Name": "BuildCube3DIntersectionRequest(out Cubes3DIntersectionApiController,out Cube3DModel,out Cube3DModel,out int,out Cube3DIntersectionModel):void",
+               "CoveredStatements": 5,
+               "TotalStatements": 5,
+               "CoveragePercent": 100
+              },
+              {
+               "Kind": "Method",
+               "Name": "BuildCubes3D(out Cube3DModel,out Cube3DModel,out int):void",
+               "CoveredStatements": 5,
+               "TotalStatements": 5,
+               "CoveragePercent": 100
+              },
+              {
+               "Kind": "Method",
+               "Name": "CreateCubes3DIntersectionApiController():Cubes3DIntersectionApiController",
+               "CoveredStatements": 3,
+               "TotalStatements": 3,
+               "CoveragePercent": 100
+              },
+              {
+               "Kind": "Method",
+               "Name": "PostCubes3DIntersectionShouldNotTouch():Task",
+               "CoveredStatements": 18,
+               "TotalStatements": 18,
+               "CoveragePercent": 100,
+               "Children": [
+                {
+                 "Kind": "InternalCompiledMethod",
+                 "Name": "MoveNext():void",
+                 "CoveredStatements": 18,
+                 "TotalStatements": 18,
+                 "CoveragePercent": 100
+                }
+               ]
+              },
+              {
+               "Kind": "Method",
+               "Name": "PostCubes3DIntersectionShouldOverlap():Task",
+               "CoveredStatements": 18,
+               "TotalStatements": 18,
+               "CoveragePercent": 100,
+               "Children": [
+                {
+                 "Kind": "InternalCompiledMethod",
+                 "Name": "MoveNext():void",
+                 "CoveredStatements": 18,
+                 "TotalStatements": 18,
+                 "CoveragePercent": 100
+                }
+               ]
+              },
+              {
+               "Kind": "Method",
+               "Name": "PostCubes3DIntersectionShouldTouch():Task",
+               "CoveredStatements": 14,
+               "TotalStatements": 14,
+               "CoveragePercent": 100,
+               "Children": [
+                {
+                 "Kind": "InternalCompiledMethod",
+                 "Name": "MoveNext():void",
+                 "CoveredStatements": 14,
+                 "TotalStatements": 14,
+                 "CoveragePercent": 100
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "Kind": "Type",
+           "Name": "CustomWebApplicationFactory<TStartup>",
+           "CoveredStatements": 0,
+           "TotalStatements": 27,
+           "CoveragePercent": 0,
+           "Children": [
+            {
+             "Kind": "Method",
+             "Name": "ConfigureWebHost(IWebHostBuilder):void",
+             "CoveredStatements": 0,
+             "TotalStatements": 27,
+             "CoveragePercent": 0,
+             "Children": [
+              {
+               "Kind": "OwnCoverage",
+               "CoveredStatements": 0,
+               "TotalStatements": 3,
+               "CoveragePercent": 0
+              },
+              {
+               "Kind": "AnonymousMethod",
+               "Name": "(IServiceCollection):void",
+               "CoveredStatements": 0,
+               "TotalStatements": 24,
+               "CoveragePercent": 0,
+               "Children": [
+                {
+                 "Kind": "OwnCoverage",
+                 "CoveredStatements": 0,
+                 "TotalStatements": 20,
+                 "CoveragePercent": 0
+                },
+                {
+                 "Kind": "AnonymousMethod",
+                 "Name": "(DbContextOptionsBuilder):void",
+                 "CoveredStatements": 0,
+                 "TotalStatements": 4,
+                 "CoveragePercent": 0
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

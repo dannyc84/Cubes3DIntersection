@@ -24,6 +24,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{C4B10CD8-C917-49D7-AEBC-259417086CF0}"
+	ProjectSection(SolutionItems) = preProject
+		test\Unit\UnitTestCoverage.json = test\Unit\UnitTestCoverage.json
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{D37CC9AD-D4BB-461F-BB8A-AEC6A9A6107C}"
 	ProjectSection(SolutionItems) = preProject
