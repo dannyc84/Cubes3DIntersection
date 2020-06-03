@@ -24,7 +24,7 @@ dotnet build
 ```
 4. Next, within the Cubes3DIntersection.Api directory, launch the back end by running:
 ```csharp
-dotnet run --project .\src\Cubes3DIntersection.Api\
+dotnet run
 ```
 5. Launch http://localhost:44340/ in your browser to view the Swagger UI documentation.
 

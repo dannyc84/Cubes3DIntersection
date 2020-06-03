@@ -1,5 +1,4 @@
-﻿using Cubes3DIntersection.Application;
-using Cubes3DIntersection.Infrastructure.Data;
+﻿using Cubes3DIntersection.Infrastructure.Data;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
