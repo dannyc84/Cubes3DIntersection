@@ -9,7 +9,7 @@ You will need the following tools:
 
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
 * [.Net Core 3.1 or later](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-* EF Core 3.1 or later
+* [EF Core 3.1 or later](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore)
 
 ### Installing
 Follow these steps to get your development environment set up:
