@@ -1,9 +1,8 @@
 using Cubes3DIntersection.Api.Controllers;
-using Cubes3DIntersection.Application;
 using Cubes3DIntersection.Application.Factories;
 using Cubes3DIntersection.Application.Interfaces;
 using Cubes3DIntersection.Application.Models;
-using Cubes3DIntersection.Core.Repository;
+using Cubes3DIntersection.Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using System.Net;
@@ -27,11 +26,8 @@ namespace Cubes3DIntersection.Api.Tests.Controllers
         public async Task PostCubes3DIntersectionShouldTouch()
         {
             // Arrange
-            Cubes3DIntersectionApiController cubes3DIntersectionApiController;
-            Cube3DModel firstCube3D, secondCube3D;
-            int edgesLength;
-            Cube3DIntersectionModel cube3DIntersectionRequest;
-            MakeCube3DIntersectionRequest(out cubes3DIntersectionApiController, out firstCube3D, out secondCube3D, out edgesLength, out cube3DIntersectionRequest);
+            MakeCube3DIntersectionRequest(out var cubes3DIntersectionApiController, out var firstCube3D,
+                out var secondCube3D, out var edgesLength, out var cube3DIntersectionRequest);
 
             var cube3DIntersectionExpectedResponse = new Cube3DIntersectionModel
             {
@@ -53,13 +49,13 @@ namespace Cubes3DIntersection.Api.Tests.Controllers
             Assert.NotNull(createdResponse);
 
             var result = createdResponse.Result as ObjectResult;
-            Assert.Equal(result.StatusCode, (int)HttpStatusCode.Created);
+            Assert.Equal(result?.StatusCode, (int)HttpStatusCode.Created);
 
-            var actualResult = result.Value as Cube3DIntersectionModel;
+            var actualResult = result?.Value as Cube3DIntersectionModel;
             Assert.IsType<Cube3DIntersectionModel>(actualResult);
 
             Assert.True(actualResult.Collision == cube3DIntersectionExpectedResponse.Collision);
-            Assert.True(actualResult.IntersectionVolume == cube3DIntersectionExpectedResponse.IntersectionVolume);
+            Assert.True(actualResult.IntersectionVolume.Equals(cube3DIntersectionExpectedResponse.IntersectionVolume));
 
             _mockCube3DIntersectionService.VerifyAll();
         }
@@ -102,7 +98,7 @@ namespace Cubes3DIntersection.Api.Tests.Controllers
 
             var secondCube3D = new Cube3DModel
             {
-                PointCoordinates = PointModelFactory.Create(4, 2, 2)
+                PointCoordinates = PointModelFactory.Create(3, 2, 2)
             };
 
             var edgesLength = 2;
@@ -134,13 +130,13 @@ namespace Cubes3DIntersection.Api.Tests.Controllers
             Assert.NotNull(createdResponse);
 
             var result = createdResponse.Result as ObjectResult;
-            Assert.Equal(result.StatusCode, (int)HttpStatusCode.Created);
+            Assert.Equal(result?.StatusCode, (int)HttpStatusCode.Created);
 
-            var actualResult = result.Value as Cube3DIntersectionModel;
+            var actualResult = result?.Value as Cube3DIntersectionModel;
             Assert.IsType<Cube3DIntersectionModel>(actualResult);
 
             Assert.True(actualResult.Collision == cube3DIntersectionExpectedResponse.Collision);
-            Assert.True(actualResult.IntersectionVolume == cube3DIntersectionExpectedResponse.IntersectionVolume);
+            Assert.True(actualResult.IntersectionVolume.Equals(cube3DIntersectionExpectedResponse.IntersectionVolume));
 
             _mockCube3DIntersectionService.VerifyAll();
         }
@@ -190,13 +186,13 @@ namespace Cubes3DIntersection.Api.Tests.Controllers
             Assert.NotNull(createdResponse);
 
             var result = createdResponse.Result as ObjectResult;
-            Assert.Equal(result.StatusCode, (int)HttpStatusCode.Created);
+            Assert.Equal(result?.StatusCode, (int)HttpStatusCode.Created);
 
-            var actualResult = result.Value as Cube3DIntersectionModel;
+            var actualResult = result?.Value as Cube3DIntersectionModel;
             Assert.IsType<Cube3DIntersectionModel>(actualResult);
 
             Assert.True(actualResult.Collision == cube3DIntersectionExpectedResponse.Collision);
-            Assert.True(actualResult.IntersectionVolume == cube3DIntersectionExpectedResponse.IntersectionVolume);
+            Assert.True(actualResult.IntersectionVolume.Equals(cube3DIntersectionExpectedResponse.IntersectionVolume));
 
             _mockCube3DIntersectionService.VerifyAll();
         }
