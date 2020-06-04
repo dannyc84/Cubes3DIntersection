@@ -134,6 +134,7 @@ The application's main **starting point** is the ASP.NET Core web project. This 
 For each layer, there should be a test project which includes intended layer dependencies and mock classes. So that means Core-Application-Infrastructure and Api layer has their own test layer. By this way this test projects also divided by **unit, functional and integration tests** defined by in which layer it is implemented. 
 Test projects using **xunit and Mock libraries**.  xunit, because that's what ASP.NET Core uses internally to test the product. Moq, because perform to create fake objects clearly and its very modular.
 Due to time constraints, instead of unit tests for all the projects, some tests made with **postman** have been added.
+Tests are automatically verified: ![.NET Core](https://github.com/dannyc84/Cubes3DIntersection/workflows/.NET%20Core/badge.svg)
 
 ## Technologies
 * .NET Core 3.1
