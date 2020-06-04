@@ -1,7 +1,8 @@
 # Cubes3DIntersection
 Cubes3DIntersection is a web application to check if two 3D cubes collide and, eventually, calculate the intersected volume. It is built following the requirements: https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:e0a740b7-d870-4727-87cc-fb9815734b15.
 
-Tests are automatically verified: ![.BuildAndTest](https://github.com/dannyc84/Cubes3DIntersection/workflows/.BuildAndTest/badge.svg)
+Tests are automatically verified: 
+![Build and Test](https://github.com/dannyc84/Cubes3DIntersection/workflows/Build%20and%20Test/badge.svg)
 
 ## Getting Started
 Use these instructions to get the project up and running.
