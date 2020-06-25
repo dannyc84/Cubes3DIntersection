@@ -120,7 +120,7 @@ The Infrastructure project depends on Microsoft.**EntityFrameworkCore.SqlServer*
 EF add-migration classes.
 
 #### Repository
-EF Repository and Specification implementation. This class responsible to create queries, includes, where conditions etc..
+EF Repository implementation. This class is responsible for the database operations
 
 #### Services
 Custom services implementation, like email, cron jobs etc.
